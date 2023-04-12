@@ -23,8 +23,11 @@ Attribute Directives
 			in this case, sample is input directives
 			and test is not a variable it is a string
 			
+    inbuilt input directives: ngClass,ngStyle,style, routerLink,
+    formControlName....
 			
 			
 
 	   output directives
 	   input output directives
+

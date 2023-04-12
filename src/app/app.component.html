@@ -1,8 +1,15 @@
-<h1 [ngStyle]="themes[0].h1">{{title}}</h1>
+<div id="header">
+<h1 [ngStyle]="currentheme.h1">{{title}}
+</h1>
+<div id="links">
+   <a>Theme1</a>
+   <a>Theme2</a>
+</div>
+</div>
 
 <app-about></app-about>
 
-<div id="services" [ngStyle]="themes[0].services">
+<div id="services" [ngStyle]="currentheme.services">
  <h3>Our Services</h3>
 
  <app-service-box *ngFor="let x of services"></app-service-box>
@@ -10,6 +17,6 @@
 
 </div>
 
-<div id="footer" [ngStyle]="themes[0].footer">
+<div id="footer" [ngStyle]="currentheme.footer">
    <h3> &copy; All copyrights reserved. ABC limited 2023</h3>
 </div>

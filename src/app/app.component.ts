@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {theme1} from './appdata/styledata'
+import {theme1, theme2} from './appdata/styledata'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,5 +12,6 @@ export class AppComponent {
   "Testing Services",
   "Cloud Services",
 ]
-themes:any= [theme1]
+//themes:any= [theme1, theme2]
+currentheme = theme1
 }
