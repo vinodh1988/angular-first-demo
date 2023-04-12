@@ -1,7 +1,13 @@
-<div id="header">
+<div id="header" [style.fontFamily]="currentfont">
 <h1 [ngStyle]="currentheme.h1">{{title}}
 </h1>
 <div id="links">
+   <select [(ngModel)]="currentfont">
+      <option>Arial</option>
+      <option>Courier</option>
+      <option>Consolas</option>
+      <option>Comic Sans MS</option>
+   </select>
    <a (click)="changeTheme('theme1')">Theme1</a>
    <a (click)="changeTheme('theme2')">Theme2</a>
 </div>

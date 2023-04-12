@@ -14,7 +14,7 @@ export class AppComponent {
 ]
 //themes:any= [theme1, theme2]
 currentheme = theme1
-
+currentfont:string = "Courier"
 changeTheme(theme:string):void{
 
   
