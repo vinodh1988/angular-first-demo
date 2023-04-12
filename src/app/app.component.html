@@ -4,9 +4,9 @@
 
 <div id="services">
  <h3>Our Services</h3>
- <app-service-box></app-service-box>
- <app-service-box></app-service-box>
- <app-service-box></app-service-box>
+
+ <app-service-box *ngFor="let x of services"></app-service-box>
+
 
 </div>
 
