@@ -1,0 +1,30 @@
+Attribute Directives
+
+   Attributes directives changes the behaviour of
+   the target element [ 
+   Style, data ]
+   
+   there are three kinds of attribute directives
+   
+       input directives
+	       - Changes behaviour of target element
+		   - usually these directives are enclosed within []
+		   - It receives value from the right side and usually
+		   in the right side we mention objects
+		   
+		    <h1 [sample]="test"></h1>
+			
+			here sample is input directives
+			test is input value [variable]
+			note: test is not string , test is a variable
+			
+			<h1 sample = "test"></h1>
+			
+			in this case, sample is input directives
+			and test is not a variable it is a string
+			
+			
+			
+
+	   output directives
+	   input output directives

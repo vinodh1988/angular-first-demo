@@ -1,8 +1,8 @@
-<h1>{{title}}</h1>
+<h1 [ngStyle]="themes[0].h1">{{title}}</h1>
 
 <app-about></app-about>
 
-<div id="services">
+<div id="services" [ngStyle]="themes[0].services">
  <h3>Our Services</h3>
 
  <app-service-box *ngFor="let x of services"></app-service-box>
@@ -10,6 +10,6 @@
 
 </div>
 
-<div id="footer">
+<div id="footer" [ngStyle]="themes[0].footer">
    <h3> &copy; All copyrights reserved. ABC limited 2023</h3>
 </div>
