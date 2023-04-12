@@ -2,8 +2,8 @@
 <h1 [ngStyle]="currentheme.h1">{{title}}
 </h1>
 <div id="links">
-   <a>Theme1</a>
-   <a>Theme2</a>
+   <a (click)="changeTheme('theme1')">Theme1</a>
+   <a (click)="changeTheme('theme2')">Theme2</a>
 </div>
 </div>
 

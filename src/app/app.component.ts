@@ -14,4 +14,10 @@ export class AppComponent {
 ]
 //themes:any= [theme1, theme2]
 currentheme = theme1
+
+changeTheme(theme:string):void{
+
+  
+   this.currentheme = theme=="theme1"? theme1: theme2;
+}
 }
