@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {theme1, theme2} from './appdata/styledata'
+import {datafields}  from './appdata/appinfo'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,6 +16,7 @@ export class AppComponent {
 //themes:any= [theme1, theme2]
 currentheme = theme1
 currentfont:string = "Courier"
+dataitems=datafields
 changeTheme(theme:string):void{
 
   
