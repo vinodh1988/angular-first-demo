@@ -8,11 +8,13 @@ import {datafields}  from './appdata/appinfo'
 })
 export class AppComponent {
   title:string = 'ABC Private Limited';
-  services:string[] =
-  [ "Application Services", 
-  "Testing Services",
-  "Cloud Services",
-]
+  services:string[] =datafields.servicelist;
+  descriptions:string[]=
+  [
+    datafields.appservices,
+    datafields.testservices,
+    datafields.cloudservices
+  ]
 //themes:any= [theme1, theme2]
 currentheme = theme1
 currentfont:string = "Courier"

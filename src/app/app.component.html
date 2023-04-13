@@ -20,7 +20,8 @@
 <div id="services" [ngStyle]="currentheme.services">
  <h3>Our Services</h3>
 
- <app-service-box *ngFor="let x of services"></app-service-box>
+ <app-service-box *ngFor="let x of services;let y=index" 
+ [title]="x" [description]="descriptions[y]"></app-service-box>
 
 
 </div>
